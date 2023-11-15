@@ -6,6 +6,9 @@ class Yahoo:
         self.urlDetails = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/news/v2/get-details"
 
     def get_news_from_yahoo(self, user_input):
+        """
+        get a list of news articles from yahoo using user input as one of the parameters
+        """
 
         querystring = {"region":"US", "snippetCount":"28", "user_input":user_input}
         payload = "Pass in the value of uuids field returned right in this endpoint to load the next page, or leave empty to load first page"
@@ -20,7 +23,9 @@ class Yahoo:
 
 
     def get_news_details_from_yahoo(self, id):
-       
+        """
+        Get details of a given news article using its id
+        """
         querystring = {"uuid":id,"region":"US"} 
         headers = {
             "X-RapidAPI-Key": "e9a61035e5msh5d51b845b8b019ap19d402jsn60f9b9109b07",

@@ -2,7 +2,9 @@ import json
 import http.client, urllib.parse
 
 
-
+"""
+class for fetching the news data from Market Aux API
+"""
 class MarketAux:
 
     def __init__(self) -> None:

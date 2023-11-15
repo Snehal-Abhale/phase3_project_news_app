@@ -1,6 +1,9 @@
 import requests
 import json
 
+"""
+class for fetching news data from MS Finance API
+"""
 class MsFinance:
     def __init__(self) -> None:
         self.urlList = "https://ms-finance.p.rapidapi.com/articles/list"
